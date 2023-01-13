@@ -1,0 +1,68 @@
+Table IPL.Players {
+  Player_id int [pk] // primary key
+  Player_name varchar
+  Dob datetime
+  Batting_hand varchar
+  Bowling_skills varchar
+  country varchar
+}
+
+
+
+Table IPL.Teams {
+	Team_id	int,
+	Team varchar
+}
+
+Table IPL.deliveries  {
+	match_id int 
+	Inning Int 
+	Batting_team Varchar 
+	Bowling_team Varchar 
+	Over Int 
+	Ball Int 
+	batsman varchar 
+	Non_striker Varchar 
+	Bowler varchar 
+	Is_super_over Int 
+	Wide_runs Int 
+	Bye_runs Int 
+	Legbye_runs Int 
+	Noball_runs Int 
+	Penalty_runs Int 
+	Batsman_runs Int 
+	Extra_runs Int 
+	Player_dismissed varchar 
+	fielder varchar
+}
+
+
+
+
+Table IPL.matches  {
+	Id int 
+	Season varchar 
+	City varchar 
+	Date date 
+	Team1 varchar 
+	Team2 varchar 
+	Toss_winner varchar 
+	Toss_decision varchar 
+	Result varchar 
+	Winner varchar 
+	Win_by_runs int 
+	Win_by__wickets int 
+	Player_of_match varchar 
+	Umpire1 varchar 
+	Umpire2 varchar 
+	Umpire3 varchar
+}
+
+Table IPL."most_runs average strikerate"  {
+	Player_id int 
+	batsman Varchar 
+	total_runs int 
+	out int 
+	numberofballs int 
+	average float
+}

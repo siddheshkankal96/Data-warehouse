@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "title": "balls_per_wicket vs economy min 400 balls bowled (IPL 2018-2019)",
+  "width": 828,
+  "height": 442,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "mark": { "type": "point" },
+  "encoding": {
+    "x": {
+      "field": "balls_per_wicket",
+      "type": "quantitative",
+      "scale": { "type": "linear", "zero": false }
+    },
+    "y": {
+      "field": "econ",
+      "type": "quantitative",
+      "scale": { "type": "linear", "zero": false }
+    },
+    "color": {
+      "field": "bowler",
+      "type": "nominal",
+      "sort": { "field": "balls_per_wicket", "op": "sum" },
+      "scale": { "type": "linear", "zero": true }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "balls_per_wicket": 20.473684210526315,
+        "econ": 6.856041131105398,
+        "bowler": "Rashid Khan"
+      },
+      {
+        "balls_per_wicket": 19.833333333333332,
+        "econ": 7.277310924369747,
+        "bowler": "JJ Bumrah"
+      },
+      {
+        "balls_per_wicket": 26.28,
+        "econ": 7.662100456621005,
+        "bowler": "R Ashwin"
+      },
+      {
+        "balls_per_wicket": 29.681818181818183,
+        "econ": 7.846860643185299,
+        "bowler": "B Kumar"
+      },
+      {
+        "balls_per_wicket": 20.34375,
+        "econ": 7.428571428571429,
+        "bowler": "DL Chahar"
+      },
+      {
+        "balls_per_wicket": 23.85185185185185,
+        "econ": 7.956521739130434,
+        "bowler": "SP Narine"
+      },
+      {
+        "balls_per_wicket": 20.733333333333334,
+        "econ": 7.871382636655948,
+        "bowler": "YS Chahal"
+      },
+      {
+        "balls_per_wicket": 24.04,
+        "econ": 9.164725457570714,
+        "bowler": "DJ Bravo"
+      },
+      {
+        "balls_per_wicket": 22.26923076923077,
+        "econ": 7.05699481865285,
+        "bowler": "RA Jadeja"
+      },
+      {
+        "balls_per_wicket": 20.428571428571427,
+        "econ": 8.79020979020979,
+        "bowler": "UT Yadav"
+      },
+      {
+        "balls_per_wicket": 21.14814814814815,
+        "econ": 8.679509632224168,
+        "bowler": "S Kaul"
+      },
+      {
+        "balls_per_wicket": 24.47826086956522,
+        "econ": 8.930728241563056,
+        "bowler": "PP Chawla"
+      },
+      {
+        "balls_per_wicket": 26,
+        "econ": 10.065934065934066,
+        "bowler": "JD Unadkat"
+      },
+      {
+        "balls_per_wicket": 16.84375,
+        "econ": 9.272727272727273,
+        "bowler": "HH Pandya"
+      },
+      {
+        "balls_per_wicket": 22.956521739130434,
+        "econ": 7.28409090909091,
+        "bowler": "KH Pandya"
+      },
+      {
+        "balls_per_wicket": 16.09375,
+        "econ": 7.619417475728156,
+        "bowler": "Imran Tahir"
+      },
+      {
+        "balls_per_wicket": 19.76923076923077,
+        "econ": 7.891050583657588,
+        "bowler": "J Archer"
+      },
+      {
+        "balls_per_wicket": 24.476190476190474,
+        "econ": 8.474708171206226,
+        "bowler": "Kuldeep Yadav"
+      },
+      {
+        "balls_per_wicket": 18.14814814814815,
+        "econ": 8.877551020408163,
+        "bowler": "AJ Tye"
+      },
+      {
+        "balls_per_wicket": 20.25,
+        "econ": 9.246913580246915,
+        "bowler": "SN Thakur"
+      },
+      {
+        "balls_per_wicket": 15.387096774193548,
+        "econ": 7.522012578616353,
+        "bowler": "S Gopal"
+      },
+      {
+        "balls_per_wicket": 21.318181818181817,
+        "econ": 6.972281449893391,
+        "bowler": "A Mishra"
+      },
+      {
+        "balls_per_wicket": 35.76923076923077,
+        "econ": 7.729032258064516,
+        "bowler": "AR Patel"
+      },
+      {
+        "balls_per_wicket": 20.08695652173913,
+        "econ": 7.753246753246753,
+        "bowler": "Harbhajan Singh"
+      }
+    ]
+  },
+  "config": { "background": "#ffffff", "padding": 20 }
+}
