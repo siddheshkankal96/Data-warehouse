@@ -1,0 +1,65 @@
+create table customer(
+customer_id int,
+customer_name varchar,
+address_id varchar(100),
+phone_number number,
+password varchar,
+joined_date date);
+
+create table Driver(
+driver_id int,
+driver_name varchar,
+address_id int,
+emial varchar,
+phone_number number,
+joined_date date,
+car_id int,
+driver_licence_no varchar
+);
+
+create table car_details(
+car_id int,
+car_no int,
+car_type varchar,
+car_colour varchar,
+car_company varchar
+);
+
+create table address_details(
+address_id int,
+city varchar,
+state varchar,
+landmark varchar,
+area varchar,
+pincode number,
+);
+
+create table trip(
+trip_id int,
+driver_id int,
+customer_id int,
+device_id int,
+trip_requested timestamp,
+start_location_id int,
+end_location_id int,
+wait_time int,
+customer_rating int,
+payment_id int,
+status int
+);
+
+create table location (
+location_id int,
+landmark varchar,
+state varchar,
+city varchar
+);
+
+create table payments(
+payment_id int,
+type varchar,
+base_rate int,
+surge_rate int,
+total_amount int,
+transaction_id int
+);
